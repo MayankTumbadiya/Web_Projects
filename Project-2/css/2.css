@@ -1,0 +1,243 @@
+/* CSS RESET */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS VARIABLE */
+
+:root {
+    --navbar-height: 250px;
+}
+
+/* NAVIGATION BAR */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+
+}
+#navbar img{
+    opacity: 0.8;
+}
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* NAVIGATION BAR :LOGO AND IMG CSS */
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    margin: 3px 6px;
+    height: 59px;
+}
+
+
+/* NAVIGATION BAR :LIST STYLING */
+#navbar ul {
+    display: flex;
+    font-family: 'Inria Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* HOME SECTION */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height:537px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+/* SERVICES SECTION */
+
+#services{
+    display: flex;
+    margin: 34px;
+
+}
+#services .box{
+    border:2px solid brown;
+    padding: 34px;
+    margin: 3px;
+    border-radius: 23px;
+    background-color: rgb(209, 209, 209);
+}
+#services .box img{
+    display: block;
+    height: 160px;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Inria Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+/* CLIENT SECTION */
+
+#clientsection{
+    height: 344px;
+   position: relative;
+}
+
+#clientsection::before{
+   content: "";
+   position:absolute;
+   background: url('../bg.jpg');
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 1.2;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 110px;
+}
+.client-item{
+    padding: 34px;
+}
+
+/* UTILITY CLASS */
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Inria Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+
+
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-family: 'Inria Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+/* CONTACT SECTION */
+
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1.2;
+    background: url('../contact.jpg') no-repeat center center/cover;
+
+}
+footer{
+    background-color: grey;
+    color: white;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    padding-bottom: 34px;
+
+}
+
+#contact-box input,
+
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Inria Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.h-primary {
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Inria Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.h-secondry {
+    font-size:3.2rem;
+    padding: 12px;
+    font-family: 'Inria Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}

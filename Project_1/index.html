@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-repeat: no-repeat;
+        /* background-image: url(img/bg.png.jpg); */
+        font-family: 'Hubballi', sans-serif;
+        font-size: 18px;
+    }
+    
+    header {
+        background-color: pink;
+    }
+    header::before{
+        content: "";
+        background:url(img/bg.png.jpg) no-repeat center center/cover;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        top: 0px;
+        left: 0px;
+        opacity: 0.8;
+    }
+
+
+    .left {
+        display: inline-block;
+        /* border:3px solid red; */
+        position: absolute;
+        top: 28px;
+        left: 34px;
+    }
+
+    .mid {
+        display: block;
+        /* border: 3px solid green; */
+        width: 39%;
+        margin: 29px auto;
+        padding: 2px 20px;
+        font-size: 16px;
+    }
+
+    .right {
+        display: inline-block;
+        /* border: 3px solid violet; */
+        position: absolute;
+        right: 19px;
+        top: 46px;
+    }
+
+    img {
+        width: 50px;
+    }
+
+    h4 {
+        margin: 0px 0px;
+        font-size: 16px;
+    }
+
+    .navbar li {
+        list-style: none;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: black;
+        padding: 20px 3px;
+        margin: 2px 11px;
+    }
+
+    .btn {
+
+        background-color: pink;
+        border: none;
+        padding: 0px 4px;
+        margin: 4px 5px;
+        font-family: 'Hubballi', sans-serif;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(249, 176, 188);
+    }
+
+    .navbar li:hover {
+        background-color: rgb(249, 176, 188);
+    }
+
+    .container {
+        border: 3px solid rgb(240, 134, 134);
+        border-radius: 10px;
+        width: 33%;
+        /* rgb(245, 185, 185) */
+        margin: 10px auto;
+        padding: 75px;
+    }
+
+    h2 {
+        text-align: center;
+        /* color: rgb(232, 47, 78); */
+        color: rgba(203, 3, 3, 0.619);
+    }
+
+    .formg input {
+        font-family: 'Hubballi', sans-serif;
+        text-align: center;
+        display: block;
+        width: 227px;
+        margin: 4px auto;
+        padding: 4px;
+    }
+    .form input:hover{
+        border: none;
+    }
+    .submit{
+        display: block;
+        border: 1px solid rgb(245, 185, 185);
+        border-radius: 3px;
+        width: 60px;
+        padding:3px;
+        margin: auto;
+    }
+    .submit:hover{
+        color: white;
+        background-color: pink;
+        cursor: pointer;
+    }
+    
+    .container input:hover{
+        background-color: rgb(244, 219, 219);
+        border:none;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="img/logo.png.jpg" alt="">
+            <h4>Flowers</h4>
+        </div>
+        <!-- mid for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" target="_blank">Home</a></li>
+                <li><a href="#" target="_blank">About us</a></li>
+                <li><a href="#" target="_blank">Services</a></li>
+                <li><a href="#" target="_blank">Varities</a></li>
+            </ul>
+        </div>
+        <!-- right for bottons -->
+        <div class="right">
+            <button class="btn">Call now</button>
+            <button class="btn">Email now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Fill Form For Delivery</h2>
+        <form action="noaction.php">
+            <div class="formg">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="formg">
+                <input type="text" name="" placeholder="Enter Your City">
+            </div>
+            <div class="formg">
+                <input type="text" name="" placeholder="Enter Your Mobile Number">
+            </div>
+            <button class="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
